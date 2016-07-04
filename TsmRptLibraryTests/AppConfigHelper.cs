@@ -14,10 +14,10 @@ namespace ToggleServiceModeTests
 
         public abstract void Dispose();
 
-        private class ChangeAppConfigHelper : AppConfigHelper
+        private class ChangeAppConfigHelper :AppConfigHelper
         {
             private readonly string oldConfig =
-                AppDomain.CurrentDomain.GetData("APP_CONFIG_FILE").ToString();
+                AppDomain.CurrentDomain.GetData("APP_CONFIGFILE").ToString();
 
             private bool disposedValue;
 
